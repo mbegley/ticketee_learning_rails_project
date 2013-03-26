@@ -1,0 +1,131 @@
+Compiled jquery.js  (26ms)  (pid 9399)
+Compiled jquery_ujs.js  (3ms)  (pid 9399)
+Compiled projects.js  (782ms)  (pid 9399)
+Compiled application.js  (915ms)  (pid 9399)
+Compiled application.css  (92ms)  (pid 9399)
+Compiled jquery.js  (32ms)  (pid 9399)
+Compiled jquery_ujs.js  (3ms)  (pid 9399)
+Compiled projects.js  (611ms)  (pid 9399)
+Compiled application.js  (743ms)  (pid 9399)
+Compiled application.css  (1ms)  (pid 9399)
+Connecting to database specified by database.yml
+Migrating to CreateProjects (20130312045011)
+Connecting to database specified by database.yml
+Started GET "/projects" for 127.0.0.1 at Tue Mar 12 18:51:44 -0700 2013
+Processing by ProjectsController#index as HTML
+  Rendered projects/index.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 84ms (Views: 36.9ms | ActiveRecord: 4.3ms)
+Started GET "/projects/new" for 127.0.0.1 at Tue Mar 12 18:51:48 -0700 2013
+Processing by ProjectsController#new as HTML
+  Rendered projects/_form.html.erb (21.2ms)
+  Rendered projects/new.html.erb within layouts/application (28.7ms)
+Completed 200 OK in 53ms (Views: 34.7ms | ActiveRecord: 0.0ms)
+Started POST "/projects" for 127.0.0.1 at Tue Mar 12 18:51:56 -0700 2013
+Processing by ProjectsController#create as HTML
+  Parameters: {"commit"=>"Create Project", "utf8"=>"✓", "project"=>{"description"=>"sdfsdfsdf", "name"=>"sdfsdfsdfsdf"}, "authenticity_token"=>"tDmf8wJSa/kHS56wbyYFGuyXviZ5a+5wJY4PgRrFzFM="}
+Redirected to http://localhost:3000/projects/1
+Completed 302 Found in 316ms (ActiveRecord: 301.0ms)
+Started GET "/projects/1" for 127.0.0.1 at Tue Mar 12 18:51:56 -0700 2013
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendered projects/show.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 19ms (Views: 11.6ms | ActiveRecord: 0.6ms)
+Started GET "/projects/sdjdshgfjdshfjkshdf" for 127.0.0.1 at Tue Mar 12 18:52:07 -0700 2013
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"sdjdshgfjdshfjkshdf"}
+Completed 404 Not Found in 4ms
+
+ActiveRecord::RecordNotFound (Couldn't find Project with id=sdjdshgfjdshfjkshdf):
+  app/controllers/projects_controller.rb:22:in `show'
+
+
+Started GET "/project/not-here" for 127.0.0.1 at Tue Mar 12 18:52:13 -0700 2013
+
+ActionController::RoutingError (No route matches [GET] "/project/not-here"):
+  actionpack (3.2.12) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.12) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.12) lib/rails/rack/logger.rb:16:in `call'
+  activesupport (3.2.12) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.12) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.12) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/static.rb:62:in `call'
+  rack-cache (1.2) lib/rack/cache/context.rb:136:in `forward'
+  rack-cache (1.2) lib/rack/cache/context.rb:245:in `fetch'
+  rack-cache (1.2) lib/rack/cache/context.rb:185:in `lookup'
+  rack-cache (1.2) lib/rack/cache/context.rb:66:in `call!'
+  rack-cache (1.2) lib/rack/cache/context.rb:51:in `call'
+  railties (3.2.12) lib/rails/engine.rb:479:in `call'
+  railties (3.2.12) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.12) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  rack (1.4.5) lib/rack/handler/webrick.rb:13:in `run'
+  rack (1.4.5) lib/rack/server.rb:268:in `start'
+  railties (3.2.12) lib/rails/commands/server.rb:70:in `start'
+  railties (3.2.12) lib/rails/commands.rb:55
+  railties (3.2.12) lib/rails/commands.rb:50:in `tap'
+  railties (3.2.12) lib/rails/commands.rb:50
+  script/rails:6:in `require'
+  script/rails:6
+
+
+Started GET "/project/not-here" for 127.0.0.1 at Tue Mar 12 18:52:13 -0700 2013
+
+ActionController::RoutingError (No route matches [GET] "/project/not-here"):
+  actionpack (3.2.12) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.12) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.12) lib/rails/rack/logger.rb:16:in `call'
+  activesupport (3.2.12) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.12) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.12) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/static.rb:62:in `call'
+  rack-cache (1.2) lib/rack/cache/context.rb:136:in `forward'
+  rack-cache (1.2) lib/rack/cache/context.rb:245:in `fetch'
+  rack-cache (1.2) lib/rack/cache/context.rb:185:in `lookup'
+  rack-cache (1.2) lib/rack/cache/context.rb:66:in `call!'
+  rack-cache (1.2) lib/rack/cache/context.rb:51:in `call'
+  railties (3.2.12) lib/rails/engine.rb:479:in `call'
+  railties (3.2.12) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.12) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  rack (1.4.5) lib/rack/handler/webrick.rb:13:in `run'
+  rack (1.4.5) lib/rack/server.rb:268:in `start'
+  railties (3.2.12) lib/rails/commands/server.rb:70:in `start'
+  railties (3.2.12) lib/rails/commands.rb:55
+  railties (3.2.12) lib/rails/commands.rb:50:in `tap'
+  railties (3.2.12) lib/rails/commands.rb:50
+  script/rails:6:in `require'
+  script/rails:6
+
+
